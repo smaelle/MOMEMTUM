@@ -1,0 +1,25 @@
+body{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    background: url(media/reunion.jpg) no-repeat;
+    background-size: cover;
+    
+    .sectionone{
+        position: absolute;
+        top:0;
+        left:90%;
+    }
+    .sectiontwo{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        .divtwo{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+
+}
