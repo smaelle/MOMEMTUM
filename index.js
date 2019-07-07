@@ -18,33 +18,7 @@ function callApi() {
     }
     callApi();
 
-/*function heure()
-{
-    var date = new Date();
-    var heure = date.getHours();
-    var minute = date.getMinutes();
-    
-    if(minute < 59)
-        minute = "0" + minute;
-    return heure + "h" + minute;
-}
-console.log(heure);
 
-heure();
-
-/*var date = new Date();
-var heure =date.getHours();
-var minute=date.getMinutes();
-var f = function() {
-if(minute<59)
-minute++;
-else
-{heure++;minute=00;}
-console.log(minute);
-document.getElementById("newdate").textContent=heure+":"+minute;
-setTimeout(f, 1000);
-}
-setTimeout(f, 1000);*/
 
 function Horloge() {
     var dt=new Date();
@@ -53,70 +27,13 @@ function Horloge() {
 var timer=setInterval("Horloge()", 250);
 
 
-/*
-function toDoListEnter(){
-
-    const done = document.querySelector("#todolist").value;
-    const message = document.createElement("li")
-    message.innerHTML = done;
-
-    const list = document.querySelector('#ul')
-    list.appendChild(message);
-
+window.onload = () => {
+    let dt=new Date();
+    document.body.style.backgroundImage = `url(./media/${dt.getHours()}.jpg)`;
+    console.log(dt.getHours())
 }
 
 
-// Méthode de stockage
-document.getElementById('todolist').onKeyPress = fonction(){
-	if(typeof localStorage!='undefined' && JSON) {
-		var todolistend = {
-			input:document.getElementById('todolist').value,
-		};
-		localStorage.setItem('objectend',JSON.stringify(todolistend));
-		alert("Mémorisation effectuée");
-	} else alert("localStorage n'est pas supporté");
-};
-
-
-    /*
-    if(key ==="entrer"){Web Storage
-Démonstration 3
-Cette page utilise JSON en complément de Web Storage.
-
-Nom
-
-Prénom
-
-Ville
-
-        let newlist = document.createElement("li");
-        let text = document.createTextNode(input.value);
-        newlist.appendChild(text);
-        ul.appendChild(newlist);
-    //   Permet de supprimer le champ après avoir cliquer
-        input.value = " ";
-        message.innerHTML = " ";
-        }
-}
-
-input.addEventListener("onKeypress", toDoListEnter);
-    
-/*function toDoListEnter (){
-    if (input.value === " ") {
-        alert("erreur");
-        message.innerHTML = "Entrez du texte";
-    } else {
-        let newlist = document.createElement("li");
-        let text = document.createTextNode(input.value);
-    newlist.appendChild(text);
-    ul.appendChild(newlist);
-    //   Permet de supprimer le champ après avoir cliquer
-    input.value = " ";
-    message.innerHTML = " ";
-  }
-};
-
-toDoListEnter();*/
 
 const form = document.querySelector('form')
 const ul = document.querySelector('ul')

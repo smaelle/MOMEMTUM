@@ -3,14 +3,21 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(media/reunion.jpg) no-repeat;
   background-size: cover;
 }
 
 body .sectionone {
   position: absolute;
   top: 0;
-  left: 90%;
+  left: 80%;
+  padding: 50px;
+}
+
+body .sectionone .api-meteo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 body .sectiontwo {
@@ -21,6 +28,12 @@ body .sectiontwo {
           transform: translate(-50%, -50%);
 }
 
+body .sectiontwo #newdate {
+  font-size: 80px;
+  color: gray;
+  padding: 80px;
+}
+
 body .sectiontwo .divtwo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,5 +42,23 @@ body .sectiontwo .divtwo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 25px;
+  font-size: 30px;
+}
+
+body .sectiontwo .divtwo #input {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 3px solid black;
+}
+
+body .sectiontwo .divtwo #todolist {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+body .sectiontwo .divtwo button {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
 }
 /*# sourceMappingURL=style.css.map */
